@@ -9,7 +9,10 @@ html{
     font-family: 'PT Sans', sans-serif;
 }
 
-/* general measures */
+
+
+
+/* utility */
 .width-container{
     width: 60%;
     margin: 0 auto;
@@ -19,6 +22,12 @@ html{
     width: 100%;
     display: block;
 }
+
+:root{
+
+}
+
+
 
 /* header with megamenu */
 header{
@@ -58,6 +67,9 @@ nav.megamenu ul li a:hover{
 nav .logo{
     padding-block: 20px;
 }
+
+
+
 
 /* main begins */
 
@@ -153,6 +165,11 @@ nav .logo{
     line-height: 180%;
 }
 
+
+
+
+
+
 /* strategic planning section */
 .section-purple{
     background-color: #9593e6;
@@ -172,6 +189,7 @@ nav .logo{
 .strategic-planning-container .planning-left{   
     padding: 100px 40px 40px 40px;
 }
+
 .strategic-planning-container .planning-right{
     padding: 250px 20px 40px 20px;
 }
@@ -179,6 +197,7 @@ nav .logo{
 .strategic-planning-container .planning-left>figure{   
     margin-bottom: 100px;
 }
+
 .strategic-planning-container .planning-left>article{   
     color: white;
     line-height: 180%;
@@ -221,6 +240,257 @@ nav .logo{
 
 
 
+/* testimonmial section */
+.section-testimonials{
+    padding-bottom: 50px;
+}
+
+.testimonials-container > article{
+    text-align: center;
+}
+
+.testimonials-container > article h3,
+.testimonials-container > article p{
+    margin-block: 30px;
+}
+
+.testimonials-container > article h1{
+    font-size: 40px;
+    color: #9593e6;
+}
+
+.testimonials-container .testimonial-card{
+    background-color: #9593e6;
+    border-radius: 30px;
+    display:flex
+}
+
+.testimonials-container .testimonial-card > figure{
+    flex-basis: 20%;
+    padding: 30px 10px;
+}
+
+.testimonials-container .testimonial-card > div{
+    flex-basis: 80%; 
+    padding: 60px 40px;
+    color: white;
+    line-height: 180%;
+}
+
+.testimonials-container .testimonial-card:nth-child(3){
+    margin-block: 20px;
+}
+
+.testimonials-container .testimonial-card > figure img{
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;   
+}
+
+.testimonials-container .testimonial-card > div span:last-child{
+    display: block;
+    padding-top: 20px;
+}
+
+/* benefit section */
+section.benefit{
+    padding-bottom: 50px;
+}
+
+.benefit-container>h1{
+    color: white;
+    text-align: center;
+    padding-block: 50px;
+    font-size: 40px;
+}
+
+.benefit-container .benefit-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.benefit-container .benefit-card-container>div{
+    flex-basis: calc((100% / 3 ) - 10px);
+    background-color: white;
+    border-radius: 30px;
+    padding:30px;
+    line-height: 180%;
+}
+
+.benefit-container .benefit-card-container>div>h1{
+    font-size: 50px;
+}
+
+.benefit-container .benefit-card-container>div>h1,
+.benefit-container .benefit-card-container>div>h3{
+    color: #9593e6;
+    padding-block: 20px;
+}
+
+.benefit-container .benefit-card-container>div>p{
+    padding-bottom: 20px;
+}
+
+.benefit-container .benefit-card-container>div>a{
+    text-decoration: none;
+    background-color: #9593e6;
+    color: white;
+    padding: 5px 40px;
+    border-radius: 30px;
+}
+
+
+
+/* about us section */
+section.aboutus{
+    padding-block: 100px;
+}
+
+.aboutus-container{
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    line-height: 180%;
+}
+
+.aboutus-container .aboutus-left{
+    padding: 30px;  
+    flex-basis: 70%;
+}
+
+.aboutus-container .aboutus-left>h1{
+    font-size: 50px;  
+    padding-block: 30px;
+    color: #9593e6;
+}
+
+.aboutus-container .aboutus-left p{
+    padding-block: 20px;   
+}
+
+.aboutus-container .aboutus-right{  
+    flex-basis: 30%;
+    padding: 30px 40px;
+}
+
+.aboutus-container .aboutus-right > figure{  
+    width: 75%;
+    
+    aspect-ratio: 1;
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+
+.aboutus-container .aboutus-right > figure > i{  
+    font-size: 40px;
+    color: #9593e6;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+}
+
+.aboutus-container .aboutus-right > span{  
+    display: block;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #9593e6;
+    margin-block: 20px;
+}
+
+.aboutus-container .aboutus-right > a{
+    text-decoration: none;
+    background-color: #9593e6;
+    font-size: 12px;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 30px;
+}
+
+/* footer */
+
+/* section get-started */
+.get-started{
+    background-color: #9593e6;
+}
+
+.get-started .get-started-container{
+    width: 30%;
+    margin: 0 auto;
+    margin-block: 50px;
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.get-started .get-started-container > h2{
+    font-size: 40px;
+}
+
+.get-started .get-started-container > h1{
+    font-size: 70px;
+    color: #fdc15f;
+}
+
+.get-started .get-started-container > div{
+    padding-block: 40px;
+}
+
+.get-started .get-started-container>div a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #9593e6;
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px 80px;
+    letter-spacing: 3px;
+}
+
+.get-started .get-started-container p:nth-child(4){
+    padding-inline: 40px;
+}
+
+.get-started .get-started-container>span a{
+    text-decoration: none;
+    color:white
+}
+
+
+/* section credits */
+.credits{
+    background-color: #333333;
+    padding-block: 40px;
+}
+
+.credits .credits-contianer{
+    width: 25%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+}
+
+.credits .credits-contianer p:last-child{
+    margin-top: 40px;
+}
+
+.credits .credits-contianer p:last-child a{
+    color: #9593e6;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -229,8 +499,8 @@ nav .logo{
 
 /* media query */
 
-/* from 768 */
-@media screen and (max-width: 768px) {
+/* from 992 */
+@media screen and (max-width: 992px) {
     
     /* nav megamenu */
     nav.megamenu ul{
@@ -277,14 +547,40 @@ nav .logo{
     .strategic-planning-container .planning-left{   
         padding: 100px 20px 40px 20px;
     }
+
+    /* benefit section */
+    .benefit-container .benefit-card-container>div{
+        flex-basis: calc((100% / 2 ) - 10px);
+    }
+
+
+    /* about us section */
+    .aboutus-container{
+        width: 90%;
+    }
+    .aboutus-container .aboutus-right{  
+        padding: 30px 10px;
+    }
+    
+
+    /* section get-started */
+    .get-started .get-started-container{
+        width: 90%;
+    }
+
+
+    /* section credits */
+    .credits .credits-contianer{
+        width: 80%;
+    }
 }
 
 
 
 
 
-/* from 480 */
-@media screen and (max-width: 480px) {
+/* from 576 */
+@media screen and (max-width: 576px) {
     
     /* nav megamenu */
     nav.megamenu ul{
@@ -321,4 +617,39 @@ nav .logo{
     .strategic-planning-container .planning-left>article h2{   
         font-size: 30px;
     }
+
+    /* testimonmial section */
+    .testimonials-container .testimonial-card{
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+    /* benefit section */
+    .benefit-container .benefit-card-container>div{
+        flex-basis: 100%;
+    }
+
+
+    /* about us section */
+    .aboutus-container{
+        width: 100%;
+        flex-direction: column;
+    }
+    .aboutus-container .aboutus-right > figure{  
+        width: 40%;  
+    }
+
+
+    /* section get-started */
+    .get-started .get-started-container{
+        width: 90%;
+    }
+
+    /* section credits */
+    .credits .credits-contianer{
+        width: 80%;
+    }
 }
+
+/* Concluso esercizio  */
